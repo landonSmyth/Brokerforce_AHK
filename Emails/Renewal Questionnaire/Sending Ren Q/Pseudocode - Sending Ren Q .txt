@@ -1,0 +1,42 @@
+
+/In account locate Search name of client (and press enter)
+Alt + A + D 
+Ctrl C 
+Alt + A + A 
+Tab Tab 
+f tab tab 
+spr /This is finicky, if the most recent rate sheet was not attached under SPREADSHEET 
+it could open the wrong file or not the most recent, just watch it to make sure 
+Enter 
+Enter (attachments must be sorted in most recent at the top) 
+
+/This copies the name of the client and 
+opens the rate sheet to tell if they have 
+D&O or not 
+
+/With email template open 
+/Here you could get user input to see if they have D&O 
+and if they do write extra lines at the end that delete the D&O
+section 
+Tab Tab 
+(Ctrl + Shift + ->) * 2 
+Backspace 
+down arrow 
+Ctrl + V 
+Space (clientName) 
+Tab 
+Enter 
+Tab (clientName) 
+Tab Ctrl + V 
+Alt + Fn4 
+Enter
+*Pause* 
+Alt + P + S 
+Enter 
+Alt + P + D
+8:00 AM 
+Tab * 20 
+1/9/2023 (Enter the date you want to send on)
+Enter 
+/The rest is the manual pasting of the email/name and 
+deleting D&O section if they dont have it 

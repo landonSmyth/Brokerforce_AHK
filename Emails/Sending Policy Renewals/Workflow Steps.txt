@@ -1,0 +1,97 @@
+Workflow for all AB Clients:
+
+-Forward the template 
+-Open the client to the Account Detail tab 
+-Copy client name 
+-Delete AB - or DB - from subject line in the email(if applicable for template)
+-Paste the client name at the end of the line, after the () 
+-Type the client name in the bracket and then a dash, like "(PINEG02 - )"
+-Open the policies tab and copy the P04 number 
+-Paste into bracket after the dash, like "(PINEG02 - P04XXXXXXX)"
+-Drag over files from the renewal email from Tricia or Nithila, ie the policy document/cert copy
+	-if they do not have a cert copy, delete the line from the email draft about it
+-Open the policy doc and double check that it is the current effective term
+-Open the client's attachments and open the most recent invoice PDF 
+-Double check the amount in the invoice is the same as the amount balance in Epic
+-Save a copy of the PDF over the "Invoice" pdf in C:\Users\LandonSmyth\Downloads\Renewal Policies
+-Drag the new invoice into the email draft
+-Check if they have A&S (can also make a mental note when copying the P04 policy number prior)
+	-If so, open their A&S cert
+	-Save as pdf over the Accident Cert in C:\Users\LandonSmyth\Downloads\Renewal Policies
+	-Attach that pdf to the email draft 
+
+-Open attachments and create new document using the "(+)" button
+-Select template "AB Ren Letter 202#"
+-Select contact as name of church and policy as the most recent CHUR policy 
+-change the year on the description to be 2023, then Finish (no folder needed)
+-Type out the policy term in words, ie "July 1, 2023 - July 3, 2024" and copy that text to clipboard
+-Y or N if they have A&S
+	-If yes, enter A&S premium with no tax and no $, ie "99.00" or "256.00"
+-Paste due date of payment (in clipboard from two steps prior)
+-Enter the RED amount balance from Epic bottom line. EX: "4527.00" NO COMMAS
+-Due date of the first payment is the first day in the period (renewal date)
+-Add one month to the previous date and enter, ie Month 1 = "July 1, 2023" Month 2 = "August 1, 2023"
+-Add one month to previous date and enter
+-Check if Ren Q received 
+	-enter Y or N accordingly
+-Add money commas as needed, ie make "4527.00" into "4,527.00"
+-Save as PDF over Renewal Letter in C:\Users\LandonSmyth\Downloads\Renewal Policies
+-Save the attachment when the prompt comes up in Epic
+-Drag the renewal letter PDF into the draft email
+
+-Open rate sheet for if they have building/contents value
+	-If they do not have either, remove the mention of it in the line about the inflationary increase. 
+	-The value for the increase should be 5% for both contents and building 
+-Edit payment date & effective date of renewal to match the renewal letter (should be the renewal date)
+-If the client does not have a certified copy, remove that line from the email draft
+	else, leave the cert copy line in the email draft
+-Address the email to the emails on the clients file
+-Save sent item is to folder "Delayed Renewals"
+-Delay send to 8:30 am on the day 1 month before their renewal date, ie send June 1, 2023 if renewal is July 1, 2023
+-Send email 
+-Uncheck in Renewals To Be Sent, mark down in Teams in a message to Nithila so she can mark them off
+
+-If the date you are sending is less than 30 days before renewal:
+	-add the time delayed to the payment due date and keep month 2 + 3 the same in the three payment plan 
+	Ex if delayed 2 weeks, add two weeks to the first payment date but keep 2 and 3 1 and 2 months away from actual renewal date
+
+Notes:
+JESUS-5 is a credit refund example (2022) 
+If the client has A&S, the renewal letter template usually adds an extra blank page unintentionally
+Need to check and ensure that the renewal letter is 2 pages only and delete the blank page if needed
+
+Workflow for all DB Clients:
+
+-Forward the template 
+-Open the client to the Account Detail tab 
+-Copy client name 
+-Delete AB - or DB - from subject line in the email(if applicable for template)
+-Paste the client name at the end of the line, after the () 
+-Type the client name in the bracket and then a dash, like "(PINEG02 - )"
+-Open the policies tab and copy the P04 number 
+-Paste into bracket after the dash, like "(PINEG02 - P04XXXXXXX)"
+-Drag over files from the renewal email from Tricia or Nithila, ie the policy document/cert copy
+	-if they do not have a cert copy, delete the line from the email draft about it
+-Open the policy doc and double check that it is the current effective term
+-If the client has A&S, save the A&S document as a pdf over the Accident Certificate pdf in C:\Users\LandonSmyth\Downloads\Renewal Policies
+-Drag that cert into the draft email 
+	-if they do not have A&S, delete the A&S invoice line from the email draft 
+-Open rate sheet for if they have building/contents value
+	-If they do not have either, remove the mention of it in the line about the inflationary increase. 
+	-The value for the increase should be 5% for both contents and building 
+-Edit payment date & effective date of renewal to match the renewal letter (should be the renewal date)
+-If the client does not have a certified copy, remove that line from the email draft
+	else, leave the cert copy line in the email draft
+-Address the email to the emails on the clients file
+-Save sent item is to folder "Delayed Renewals"
+-Delay send to 8:30 am on the day 1 month before their renewal date, ie send June 1, 2023 if renewal is July 1, 2023
+-Send email 
+-Uncheck in Renewals To Be Sent, mark down in Teams in a message to Nithila so she can mark them off
+
+Notes: 
+If the client has a separate statement due to a credit on their account:
+-Save the statement pdf over the statement pdf in C:\Users\LandonSmyth\Downloads\Renewal Policies
+-Drag this into the email draft 
+-Copy paste this text right after the "Your invoice is attached" line: NOTE: Please see attached your statement along with your invoice. 
+Your current balance is the balance in the statement document and renewal letter, NOT the balance in the invoice 
+(you already have paid $5,582.82 of your balance)", make it RED and highlighted text for emphasis

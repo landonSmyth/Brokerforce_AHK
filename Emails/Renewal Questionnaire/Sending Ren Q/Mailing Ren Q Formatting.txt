@@ -1,0 +1,5 @@
+
+
+delete one line above the current date 
+delete one line betwen the address of the church and the RE: line
+highlight the whole RE: section and turn it down one font point

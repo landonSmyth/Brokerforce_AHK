@@ -1,0 +1,86 @@
+input box for client name
+Send, client name !av
+Pause ;here you check that there are no open activities that might require waiting for before updating info 
+send !ap
+paste logic from PW renewal to open the integration
+send !aa 
+(here it is a good idea to store the active window title to a variable for window activating later)
+Pause
+Open the policy docs you need and open their rate sheet from the sp shared folder
+Pause
+Here you open the policy docs you need (comission statement and policy package)
+Input box for premium in NB comission statement 
+Input box for PW premium as of last year 
+MsgBox to show the calulation, check and see if NB premium is greater than 1.06xPW Premium of last year 
+If it is good, winactivate policy works "[Schedule of Insurance]$" should work for matching
+send, ctrl f 
+sleep 500
+send, Sanctuary Plus Religious!f{escape}{Right}*6 ;timing will need tuned here 
+Pause ;remove when functional 
+Send, %NB premium%{Enter}
+Sleep 1000
+WinActivate %clientname% R 23
+Send, ctrl f2023 Renewal Premium!f{Escape}{F2}%NB premium%{Enter}
+WinActivate %epicWindow%
+Send {Up}{Enter} ;this should select the new CHUR policy but maybe change to a pause for reliability
+Pause ;or sleep 1000
+Send, !c{Tab}%NB premium%
+Pause ;supposedly must manually click Line on the left 
+Send, {Tab}*17%NB premium%{Tab}*5{Enter}
+Pause ;supposedly must manually click the x on the policy tab on the left
+Send, {Down}Iss{Tab}
+Pause
+Send, {Enter}
+Sleep 1000
+Send, {Enter}
+Sleep 1000
+WinActivate Foxit PDF Reader$
+Send, !{F4}
+Sleep 500 ;tune as possible
+Send, u
+Sleep 1000
+Send, {PgDn}*7 ;this should bring you to the summary of changes section on page 4
+Input Box for new building limit, enter as 'n' if they dont have it 
+input box for new contents limit 
+WinActivate %clientcode% R 23
+Send !hzefdg
+Sleep 500 
+Send, b33{Enter}
+Sleep 1000
+if building != n: ctrl f building !f send %new building%{Enter} ;the enter should put the cursor on the contents already
+Ctrl F contents!f{escape}{right}%new contents%{Enter}
+Pause ;confirm in the rate sheet that the EBI is the sum of building and contents limit 
+WinActivate Foxit PDF Reader$
+Send, {PgDn}*3
+winactivate [Schedule of Insurance]$
+Pause ;here is where you compare the decuctibles for everything 
+Once everything is good: WinActivate Foxit PDF Reader$
+Send, !{F4}
+winactivate [Schedule of Insurance]$
+;add in the ctrl f for the building limit once you get a client that has it 
+Ctrl FBusiness Personal Property!f{Escape}{Right}*4%NB contents%{Enter}
+Pause ; change to sleep 1000 when functional 
+Send, Ctrl F Forest Fire Fighting!f{Escape}{Right}*4 500000{Enter}
+Sleep 500
+Send, Ctrl + S
+Pause
+Send, !uu
+Sleep 100000 ;this might need to be pause
+;it appears that you have to click Liability here 
+Send, {Tab}*7%revenue%
+Pause ;must press apply in the bottom right
+Send, !up{Enter} not sure if you need the enter here
+Pause ;click the golden triangle
+Send !ut ;open to do
+**RETURN, REST SHOULD BE A DIFFERENT HOTKEY
+
+
+;also update the EBI limit to be the sum of the two 
+;update forest fire fighting expenses endorsementto $500,000 for every single client
+
+
+
+
+
+
+

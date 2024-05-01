@@ -1,0 +1,64 @@
+Open the rate sheet 
+
+ctrl f
+send 2022 Ren + alt n
+Send escape 
+sleep 100
+Send 2023 Renewal Premium: 
+tab
+alt h ze fd g
+k3
+enter
+sleep 1000
+send May 11 (change each day)
+Tab*5
+F2
+Up
+shift down {right}*9 shift up
+ctrl c
+escape
+alt h ze fd g
+b6
+enter
+Winactivate ^List of
+tab*11
+ctrl v
+tab tab
+0001
+Enter
+Sleep 2000
+ctrl f
+Total revenue
+highlight and copy
+winactivate 23$
+F2
+control down {left} control up
+ctrl v
+tab
+pause
+alt F4
+winactivate ^T3010
+alt left 
+sleep 100
+ctrl r
+sleep 100
+winactivate ^10 - OCTOBER
+return
+then open the shared folder again 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+/Drag over sent Ren Q into account
+/Select the policy and press enter 
+Tab Tab 
+# Ren Q sent 
+Tab Tab 
+Q 
+Enter 
+*Pause to allow processing* 
+Alt + A + V
+Ctrl + N 
+Enter 
+mi Tab Tab 	
+# Ren Q Sent 
+Tab Tab 
+SMY 
+Tab Tab 
+1/9/2023 (edit date to one day after the email says form is due) 
+Enter
+
+Epic-Outlook Integration Version:
+Input box for client name
+send clientname !aa
+pause
+winactivate Outlook
+!hy1
+Pause
+tab %clientname% tab space tab p tab F4 
+sleep 200 ; this might already be selecting the top policy, double check
+tab Enter ; assumed that the top policy is the one you want
+tab tab # Ren Q Sent tab tab q
+Pause
+Enter
+winactivate clientname
+paste the logic for adding activity 
+

@@ -1,0 +1,54 @@
+
+/Search client code and press enter 
+Alt + A + A 
+Sleep 3000
+Tab Tab 
+d 
+Tab Tab 
+SP - Acc (Must be sorted most recent at the top) 
+Sleep 200 
+**PAUSE**
+/Must create a key to unpause because some clients 
+have a pdf named identical to the word doc 
+Hover over/highlight the correct doc and then resume 
+Another option would be to make a different hotkey for REFERRAL 
+clients, it seems that the pdf thing only happens with Lisa clients
+Enter
+Sleep 2000
+Ctrl + H 
+2023-
+Tab
+2024-
+Enter
+Alt + R
+Enter
+RightArrow 
+LeftArrow
+Backspace 
+2
+Tab 
+RightArrow
+LeftArrow
+Backspace
+3
+Enter 
+Alt + R
+Enter
+-  2
+Tab 
+- 2
+Enter
+Alt + R
+Enter
+Esc
+Alt + Fn4
+Sleep 1000 
+Enter
+RightArrow
+/This will have to be done manually because 
+some clients will have a 202# cert and some 
+will have one without a year if they are a new client 
+
+Could also just make two identical hotkeys but the 
+second one is suited for new clients 
+	-> Worth the saved time on the majority of clients that are 202#

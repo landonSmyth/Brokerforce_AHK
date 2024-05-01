@@ -1,0 +1,24 @@
+Have the SP folder open in the month you are doing 
+
+input box for clientname
+Send clientname Alt+a+a
+Pause 
+Send, {Tab}{Tab}f{Tab}{Tab}spr{Enter}{Enter}
+Pause
+;WinWaitActive (^%clientName%|^Endorsement|^Reissue|^Updated) winwaitactive is instant, try to figure out a good sleep time to not pause
+Sleep 1000
+Send Alt + f + a
+Sleep 500
+Send 
+send clientname R 23
+Send F4 Ctrl + a
+Sleep maybe
+send C:\Users\LandonSmyth\Brokerforce Insurance Inc\BrokerForce shared - Documents\Sanctuary Plus\Rate Sheets\10 - OCTOBER
+Send Enter
+Pause
+Send Alt + S
+Pause
+Send Alt + F4
+Sleep 1000
+Send Alt F4
+return

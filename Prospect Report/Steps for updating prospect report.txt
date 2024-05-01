@@ -1,0 +1,115 @@
+Updating Epic using prospect list:
+
+Goal: updating the information in the prospect list such as name and/or address, removing
+any churchs that are no longer prospects (not operating anymore) and revising any mistakes or input
+errors in epic
+
+Steps:
+-Open the prospect list and the CRA search
+-Search up the highest row church by their client name in Epic
+-Open to account detail 
+-Copy the name and search it in CRA 
+	-> Might be best to have the Status in CRA as "All" instead of registered 
+-If you do not find the church:
+	-try search using the "All" filter on status
+	-if you still do not find it, highlight yellow in rate sheet
+-If you find the church but it's charitable status is revoked:
+	-try to deactivate the client by using "Actions" > "Inactivate/Deactivate" > reason "No longer in business"
+	and remove it from the excel prospect sheet
+	-If you cannot deactivate it for whatever reason, highlight the row blue
+-If you find the church but the name is slightly or very different
+	-search Epic for that name and see if it is already in there. If it is, mark the client you are doing yellow
+	because you could not find them
+	-if the client is not in epic, update the name of the church 
+-If you do find the church, open its "Charity Detail" page 
+-Type out the full name in account detail 
+-Revise the address to be no-caps in the address part of account detail 
+	-> Type out things like "St" as "Street", "Cres" as "Crescent", "Blvd" as "Boulevard"
+-Copy the capital-case church name 
+-Double check while you are in account detail that the type of business is commercial
+	-> if it is personal, change it to commercial and update the contact(s) accordingly by adding
+	a new business contact and deleting the Personal contact. Leave the Category as "Both Contact & Policy"
+-Go to contacts and paste the non-caps name in the primary contact
+	-> it should already be using the address as the main address but if it is not, check that box
+-Delete that client's row from the prospect report
+-Finish
+
+Common Anomalies:
+-If you find a client in CRA with matching name/City but the address is different, update the client and address. 
+if the city is different, highlight on the sheet Purple
+-If you find a client with a revoked charitable status, only deactivate if it is a complete match. 
+If there is something different like name or address, mark Blue in the sheet 
+-If you fin a client in CRA that has a slightly different name than what is in Epic, update it. If the name
+is significantly different, do not consider them the same and mark as yellow for "not found in CRA". 
+Example: "Church of Christ" in Epic and "Church of Christ, Red Deer" are the same so update it 
+-Address directions such as S, NE, SW, should not be typed out, leave them as is 
+-If the address of the client has a unit number, update Epic to match whatever is listed in CRA
+-If a church is incorporated and it is in their legal name, follow the naming convention in CRA. 
+-For address that have RR in them, the naming convention is "RR #1", meaning the address would be written like
+"123 Test Street, RR #1
+-If there is Highway in the address, the naming convention is "Highway #7". 
+-If you see "General Delivery", do not omit it from the address. Add it in where it shows in CRA or in Epic originally
+-If you see something like "U#C44", make it "Unit C44"
+-If there is a PO box address that has a street originally in Epic but only the PO Box in CRA, omit the street address
+
+
+Steps for adding new business contact
+->press plus in contacts page (!fno)
+->Change contact type to business ({Right})
+->Enter client name ({Tab}^v or %client_name% if you can de-caps it) 
+->Check boxthat says use account address ({Tab}*3{Space})
+->Press enter
+->make it primary contact (!tp sleep 200 !y)
+->remove the all caps contact (manual most likely)
+
+
+Highlight key:
+Yellow: did not come up in CRA
+Blue: is revoked charitable status but could not deactivate
+Purple: found in CRA with same name but different city and/or province address
+Green: Any other anomaly to notify Andrea about 
+
+
+
+
+
+
+Pseudocode:
+Have CRA search and the Prospect list open 
+highlight the client code you want to search
+Send, {F2}{Shift Down}{Up}{Shift Up}^c
+client_code := A_Clipboard
+Sleep 100
+WinActivate Account Locate
+Send, %client_code%{Enter}!ad
+Pause
+Send, ^c
+Sleep 100
+WinActivate ^List of
+Sleep 200
+Send, {Tab}{Enter}
+Sleep 200
+Send, {Tab}%client_name%{Enter}
+Sleep 500
+Send, {PgDn}
+Return
+
+Hotkey for highlighting yellow (could not find in CRA)
+WinActivate ^Prospect
+Send {Escape}+{Space}!hh
+Sleep 200
+Send, {Down}{Down}{Down}{Down}{Down}{Down}{Right}{Right}{Right}{Enter}{Escape}
+Return
+
+Hotkey for highlighting blue (revoked charitable status)
+WinActivate ^client code 
+Send !f4
+WinActivate ^Prospect
+Send {Escape}+{Space}!hzfh
+Sleep 200
+Send, {Left}{Left}{Left}{Left}{Left}{Left}{Left}{Left}{Enter}{Escape}
+Pause ;remove later once functional 
+WinActivate ^client
+Return
+
+

@@ -1,0 +1,67 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+Del::ExitApp
+
+PgUp & PgDn::Suspend ;used to temporarily turn off all hotkeys in the script if buttons needed for something else
+
+`::
+Pause -1
+Return
+
+PgUp::
+reload
+Return
+
+/*
+---------------Notes and Dependencies---------------
+-The program when filling out the email deletes the first attachment, which is usually the policy document.
+Other attachments like an A&S cert or a cert copy would need deleted manually but at least it can automatically 
+delete one of them. If this is used on a renewal that does not have the policy as the first document it will delete 
+the first attachment regardless
+-
+*/
+;---------------Before Running: Open the client by clicking on the activity in Epic Home---------------
+
+;---------------1st Reminder---------------
+^+1::
+Abuse_D_O := "
+(
+Dear ,
+
+I’m emailing to follow up with you on payment for *client names*’s Insurance Renewal (email below). We have not received it yet. Payment was due in our office by *renewal date*. Please advise once payment has been sent or if it has already been sent. I have attached a copy of the Invoice again for your reference.
+
+We also have an Interac E-Transfer Payment Option available through online banking.
+
+If using the e-transfer option to make the payment of $*amount* please follow the steps below:
+	1. Go into your online banking website
+	2. Choose "Interac e-Transfer"
+	3. Email to: etransfer@brokerforce.ca, please identify your lookup code (*lookup code*) in the comments section
+
+Thank you for your prompt attention to this matter.
+)"
+setTitleMatchMode RegEx
+WinGetActiveTitle, client_window
+Send, !aa
+Pause
+Send, {Tab}{Tab}d{Tab}{Tab}Insurance Renewal{Enter}{Enter}
+Pause
+
+;---------------At this point you copy the recipient list---------------
+
+InputBox, recipient_names, Names of Recipients, Enter the names of the email recipients (Ex: Mike and Paul)
+Send, ^f
+Sleep 500 ;decrease if possible
+Send, ^v{Tab}{Tab}{Control Down}{Shift Down}{Right}{Shift Up}{Control Up}
+Send, Payment Reminder{Tab}{Delete}{Tab} ;
+Sleep 100
+right_cut := RegExMatch(client_window, " - ")
+client_code := SubStr(client_window, 1, right_cut-1)
+WinActivate ^%client_code%
+Return
+
+
+
+
+

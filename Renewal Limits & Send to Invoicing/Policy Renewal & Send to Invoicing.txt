@@ -1,0 +1,100 @@
+policy and comission statement
+rule of thumb new premium must be no more than 6%
+higher than the expiring premium 
+exp premium is in PW 
+new premium is in comission 
+
+if it is higher you send to Nithila 
+multiply by 1.06
+
+Buiness personal property = contents 
+
+to start:
+open client to Policy tab and open policy works
+open rate sheet in SP shared folder
+open attachments tab and open every policy document
+
+Only keep open the policy document with the blue signature and the comission document
+If there is any activity that say on renewal or WATCH then email Nithila and confirm
+that it is ok to update. If it is just the questionnaire then it is good to update
+
+-Check that the premium in the comission pdf is no more than 6% above the expiring premium (multiply by 1.06)
+	-expiring premium is the amount in PW
+	-new premium is the one in the comission
+	-If it is less, continue.
+	-If it is not, make a note and send to Nithila before continuing
+-Type out the new premium in policy works 
+Type out new premium in rate sheet just above notes
+Type out premium in new Epic policy line estimated, then line, estimated, then calculate commision
+Close policy and perform "Issue not issue" action - > Finish Finish
+Close comission statement after premium entered everywhere
+Contents and building limits in policy
+
+Scroll to page 4 in policy page 
+"Commercial Property - Property"
+	->Type out building an contents limits in rate sheet
+	-> Confirm the Machinery Breakdown / Equipment BI is the sum of building and contents
+-Then go to declarations and check deductible
+-First property one should match rate sheet (1000, 2500, or 5000 or 10000)
+->Flood $25,000 or $100,000
+-> Sewer backup $2,500 or $5,000
+-> Earthquake 3% $100,000 or 5% $100,000 or 10% $250,000 
+Compare with PW numbers and make sure they are the same 
+	-> If variance send to Nithila (to start)
+Check CGL and D&O / Abuse (if they have it) to make sure they match PW
+	-> IF there is Cyber, send to Nithila
+Once you have checked everything and updated the limits, close the policy document
+
+Then PW
+-Update limits in PW to match Rate sheet (once rate sheet is updated to match policy)
+-Also update the EBI / Machinery breakdown to the sum of the building and contents (if they have it)
+-Forest Fire Fighting Expenses Endorsement update to $500,000 for every single PW policy
+
+UW Tab -> Liability -> update revenue baased on rate sheet
+Then apply and save
+policy details tab -> click the yellow triangle
+
+Press print/send
+Go to contents and check off title page, delcarations, schedule of insurance,
+Stututory conditions and legal assist
+If Locations and Loss Payees is checked off, include it
+
+Once everything is good, press print final 
+Wait for it to work
+Press ok once the add activity shows up
+
+Close Rate sheet and PW
+Dont attach rate sheet to Epic when sending something to Nithila to fix errors
+If they have A&S, double click the renewal term line in Epic 
+Enter the premium in the line part and press calculate comission (the first premium will already be there)
+
+Attach the R23 rate sheet to their file as "client name R 23" under folder spreadsheet
+	-> leave delete original on so that it is gone from the shared folder
+Go find the policy under C:\Policy Works Files (pinned to quick access)
+New email
+Subject clientcodeMONTH Renewal
+Attach the doc
+
+
+If you go to print and there is an alarm task
+go to risks -> fire -> crime -> choose monitoring service (shared service)
+The one that needs updated will be marked Central Station
+Always do Apply then Ok Then Save
+
+Dont print or attach rate sheet if you are sending it to Nithila for fixing errors (rule of thumb)
+
+
+
+
+Consider it done and marked on the list if you have sent to invoicing. Dont mark off as done if sending
+to Nithila 
+
+if NB flood deductible 100k and us 25k, can update everything except send to invoicing, will need to send to Nithila
+if the other way around do everything, and amend our limit to match and delete the 100k note in the rate sheet
+
+
+If the client s a DB client, prior to sending to tricia open Nithila's calculator sheet and enter the 
+premium into the corresponding location and double check that the values in the payment schedule are correct
+monthly amount will vary a couple cents due to rounding but anything higher than 10c let Nithila know
+
+

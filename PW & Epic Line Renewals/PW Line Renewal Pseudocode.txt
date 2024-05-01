@@ -1,0 +1,29 @@
+Search client 
+alt + a + p 
+pause and select line 
+shift + F2 
+sleep 200
+Tab tab Down*5 Enter 
+pause wait for PW to open 
+alt + p + r + r 
+sleep 100-500 maybe 
+alt + l + r 
+pause to check effective date 
+Enter
+sleep 300
+control F "Non-Profit Org" 
+'''
+IF FRENCH POLICY: Administrateurs et Dirigeants is the name the new schedule should be 
+The line to move is 'Gestion du passif d'organismes sans but lucratif - par acte répréhensible' (form no CL5001E01)
+'''
+alt F + Esc 
+pause ; this must be here for clients that do not have D&O
+; manual exit and reload here if client does not have D&O
+alt + e + m + n
+send "Directors and Officers Liability" 
+{Enter}
+pause 
+send, alt F4
+sleep 200
+send, {Left} Enter 
+return 
